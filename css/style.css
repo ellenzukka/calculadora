@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    background-image:
+        linear-gradient(
+            rgba(45, 0, 0, 0.15),
+            rgba(45, 0, 0, 0.15)
+        ),
+        url("images/.fundo.jpg");
+
+    background-size: 450px auto;
+    background-repeat: repeat;
+    background-position: center;
+
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Título principal */
+.fundo > h1 {
+    padding-top: 30px;
+    font-size: 30px;
+    color: #fff0df;
+    text-shadow: 2px 2px 5px #4b1015;
+    letter-spacing: 2px;
+}
+
+/* Calculadora */
+.calculadora {
+    position: absolute;
+    background-color: rgba(75, 10, 15, 0.95);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 18px;
+    padding: 20px;
+
+    border: 2px solid #d4b9a1;
+
+    box-shadow: 0 8px 25px rgba(40, 0, 0, 0.5);
+}
+
+/* Título da calculadora */
+.calculadora h1 {
+    color: #f0d9c2;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+/* Botões */
+.botao {
+    width: 50px;
+    height: 50px;
+
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+
+    background-color: #4b1015;
+    border: 1px solid #a8796b;
+    border-radius: 8px;
+
+    color: #fff0df;
+    transition: 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.botao:hover {
+    background-color: #8b3035;
+    transform: scale(1.05);
+}
+
+/* Resultado */
+#resultado {
+    background-color: #ead9c6;
+
+    width: 207px;
+    min-height: 40px;
+
+    margin: 5px;
+    font-size: 25px;
+
+    color: #4b1015;
+    text-align: right;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
